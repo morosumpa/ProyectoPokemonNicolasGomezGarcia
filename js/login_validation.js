@@ -1,3 +1,4 @@
+"use strict";
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     // Obtiene los valores de los campos
     let username = document.getElementById('username').value.trim();
