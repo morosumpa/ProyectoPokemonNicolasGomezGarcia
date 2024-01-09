@@ -1,8 +1,8 @@
 <?php
 
-$host = "localhost"; 
-$usuario = "root"; 
-$contrasena = ""; 
+$host = "localhost";
+$usuario = "root";
+$contrasena = "";
 $base_datos = "pokemon";
 
 // Crea la conexión a la base de datos
