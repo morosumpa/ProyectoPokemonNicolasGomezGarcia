@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // La contraseña es válida, el usuario está autenticado
         session_start();
         $_SESSION["user_id"] = $id; 
-        header("Location: ../html/index.html"); 
+        header("Location: index.php"); 
         exit(); 
     } else {
         // La contraseña es incorrecta
@@ -60,6 +60,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <button type="submit">Login</button>
     </form>
 
+    <footer>
+    <p>&copy; Copyright Proyecto Pokémon - <?php echo date("Y"); ?></p>
+</footer>
 
 </body>
 </html>

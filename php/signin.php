@@ -62,5 +62,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <button type="submit">Registrarse</button>
     </form>
+    <footer>
+    <p>&copy; Copyright Proyecto Pokémon - <?php echo date("Y"); ?></p>
+</footer>
+
 </body>
 </html>
