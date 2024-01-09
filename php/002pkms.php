@@ -44,6 +44,36 @@ include("conexion.php");
         </div>
     </nav>
     <div class="container">
+    <?php
+// Realiza la consulta para obtener todos los Pokémon
+$consulta_pokemons = "SELECT * FROM pokemons";
+$resultado_pokemons = $conexion->query($consulta_pokemons);
+
+// Verifica si hay resultados
+if ($resultado_pokemons->num_rows > 0) {
+    echo "<table border='1'>";
+    echo "<tr><th>Eliminar</th><th>ID</th><th>Nombre</th><th>Tipo</th><th>Subtipo</th><th>Región</th><th>Editar</th></tr>";
+
+    // Itera sobre los resultados y muestra cada Pokémon
+    while ($fila = $resultado_pokemons->fetch_assoc()) {
+        echo "<tr>";
+        echo "<td><button onclick=\"eliminarPokemon({$fila['id']})\">Eliminar</button></td>";
+        echo "<td>{$fila['id']}</td>";
+        echo "<td>{$fila['name']}</td>";
+        echo "<td>{$fila['type']}</td>";
+        echo "<td>{$fila['subtype']}</td>";
+        echo "<td>{$fila['region']}</td>";
+        echo "<td><button onclick=\"editarPokemon({$fila['id']})\">Editar</button></td>";
+        echo "</tr>";
+    }
+
+    echo "</table>";
+} else {
+    // Si no hay resultados, muestra un mensaje
+    echo "No hay Pokémon en la base de datos.";
+}
+?>
+
 
     </div>
 </body>
