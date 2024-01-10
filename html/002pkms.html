@@ -14,9 +14,9 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-    <script defer src="../js/editPokemon.js"></script>
     <script defer src="../js/deletePokemon.js"></script>
     <script defer src="../js/actualizarAnio.js"></script>
+    <script defer src="../js/editPokemon.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -57,7 +57,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr data-id="1">
                     <td><button class="btn btn-primary" onclick="editarPokemon(1)">Editar</button></td>
                     <td>1</td>
                     <td>Bulbasaur</td>
@@ -66,7 +66,7 @@
                     <td>Kanto</td>
                     <td><button class="btn btn-danger" onclick="eliminarPokemon(1)">Eliminar</button></td>
                 </tr>
-                <tr>
+                <tr data-id="2">
                     <td><button class="btn btn-primary" onclick="editarPokemon(2)">Editar</button></td>
                     <td>2</td>
                     <td>Charmander</td>
@@ -75,16 +75,16 @@
                     <td>Kanto</td>
                     <td><button class="btn btn-danger" onclick="eliminarPokemon(2)">Eliminar</button></td>
                 </tr>
-                <tr>
+                <tr data-id="3">
                     <td><button class="btn btn-primary" onclick="editarPokemon(3)">Editar</button></td>
-                    <td>1</td>
+                    <td>3</td>
                     <td>Squirtle</td>
                     <td>water</td>
                     <td>physical</td>
                     <td>Kanto</td>
                     <td><button class="btn btn-danger" onclick="eliminarPokemon(3)">Eliminar</button></td>
                 </tr>
-                <tr>
+                <tr data-id="4">
                     <td><button class="btn btn-primary" onclick="editarPokemon(4)">Editar</button></td>
                     <td>4</td>
                     <td>Pikachu</td>
@@ -93,7 +93,7 @@
                     <td>Kanto</td>
                     <td><button class="btn btn-danger" onclick="eliminarPokemon(4)">Eliminar</button></td>
                 </tr>
-                <tr>
+                <tr data-id="5">
                     <td><button class="btn btn-primary" onclick="editarPokemon(5)">Editar</button></td>
                     <td>5</td>
                     <td>Eevee</td>
