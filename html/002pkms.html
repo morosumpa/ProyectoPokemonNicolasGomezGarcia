@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,8 +14,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-        <script defer src="../js/editPokemon.js"></script>
-        <script defer src="../js/deletePokemon.js"></script>
+    <script defer src="../js/editPokemon.js"></script>
+    <script defer src="../js/deletePokemon.js"></script>
+    <script defer src="../js/actualizarAnio.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -45,65 +46,69 @@
     <div class="container">
         <table class="table table-striped">
             <thead>
-              <tr>
-                <th scope="col">Editar</th>
-                <th scope="col">ID</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Tipo</th>
-                <th scope="col">Subtipo</th>
-                <th scope="col">Región</th>
-                <th scope="col">Eliminar</th>
-              </tr>
+                <tr>
+                    <th scope="col">Editar</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Subtipo</th>
+                    <th scope="col">Región</th>
+                    <th scope="col">Eliminar</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <td><button class="btn btn-primary" onclick="editarPokemon(1)">Editar</button></td>
-                <td>1</td>
-                <td>Bulbasaur</td>
-                <td>grass</td>
-                <td>physical</td>
-                <td>Kanto</td>
-                <td><button class="btn btn-danger" onclick="eliminarPokemon(1)">Eliminar</button></td>
-              </tr>
-              <tr>
-                <td><button class="btn btn-primary" onclick="editarPokemon(2)">Editar</button></td>
-                <td>2</td>
-                <td>Charmander</td>
-                <td>fire</td>
-                <td>special</td>
-                <td>Kanto</td>
-                <td><button class="btn btn-danger" onclick="eliminarPokemon(2)">Eliminar</button></td>
-              </tr>
-              <tr> 
-                <td><button class="btn btn-primary" onclick="editarPokemon(3)">Editar</button></td>
-                <td>1</td>
-                <td>Squirtle</td>
-                <td>water</td>
-                <td>physical</td>
-                <td>Kanto</td>
-                <td><button class="btn btn-danger" onclick="eliminarPokemon(3)">Eliminar</button></td>
-              </tr>
-              <tr>
-                <td><button class="btn btn-primary" onclick="editarPokemon(4)">Editar</button></td>
-                <td>4</td>
-                <td>Pikachu</td>
-                <td>electric</td>
-                <td>special</td>
-                <td>Kanto</td>
-                <td><button class="btn btn-danger" onclick="eliminarPokemon(4)">Eliminar</button></td>
-              </tr>
-              <tr>
-                <td><button class="btn btn-primary" onclick="editarPokemon(5)">Editar</button></td>
-                <td>5</td>
-                <td>Eevee</td>
-                <td>normal</td>
-                <td>physical</td>
-                <td>Kanto</td>
-                <td><button class="btn btn-danger" onclick="eliminarPokemon(5)">Eliminar</button></td>
-              </tr>
+                <tr>
+                    <td><button class="btn btn-primary" onclick="editarPokemon(1)">Editar</button></td>
+                    <td>1</td>
+                    <td>Bulbasaur</td>
+                    <td>grass</td>
+                    <td>physical</td>
+                    <td>Kanto</td>
+                    <td><button class="btn btn-danger" onclick="eliminarPokemon(1)">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-primary" onclick="editarPokemon(2)">Editar</button></td>
+                    <td>2</td>
+                    <td>Charmander</td>
+                    <td>fire</td>
+                    <td>special</td>
+                    <td>Kanto</td>
+                    <td><button class="btn btn-danger" onclick="eliminarPokemon(2)">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-primary" onclick="editarPokemon(3)">Editar</button></td>
+                    <td>1</td>
+                    <td>Squirtle</td>
+                    <td>water</td>
+                    <td>physical</td>
+                    <td>Kanto</td>
+                    <td><button class="btn btn-danger" onclick="eliminarPokemon(3)">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-primary" onclick="editarPokemon(4)">Editar</button></td>
+                    <td>4</td>
+                    <td>Pikachu</td>
+                    <td>electric</td>
+                    <td>special</td>
+                    <td>Kanto</td>
+                    <td><button class="btn btn-danger" onclick="eliminarPokemon(4)">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-primary" onclick="editarPokemon(5)">Editar</button></td>
+                    <td>5</td>
+                    <td>Eevee</td>
+                    <td>normal</td>
+                    <td>physical</td>
+                    <td>Kanto</td>
+                    <td><button class="btn btn-danger" onclick="eliminarPokemon(5)">Eliminar</button></td>
+                </tr>
             </tbody>
-          </table>
+        </table>
     </div>
+
+    <footer id="footer" class="text-center p-4">
+        <p id="copyright">&copy; Copyright Proyecto Pokémon - </p>
+    </footer>
 </body>
 
 </html>
