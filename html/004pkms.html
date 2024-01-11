@@ -15,11 +15,13 @@
         crossorigin="anonymous"></script>
     <script defer src="../js/actualizarAnio.js"></script>
     <script defer src="../js/createPokemon.js"></script>
+    <script defer src="../js/estacionesColores.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Proyecto Pokémon</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,6 +43,7 @@
             </div>
         </div>
     </nav>
+</header>
     <div class="container">
        <form id="pokemonForm" action="002pkms.html" method="post" class="mb-3" onsubmit="return onSubmitForm()">
             <div class="mb-3">
@@ -108,7 +111,7 @@
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-primary">Guardar Pokémon</button>
+            <button type="submit" class="btn">Guardar Pokémon</button>
         </form>
     </div>
 

@@ -17,11 +17,13 @@
     <script defer src="../js/deletePokemon.js"></script>
     <script defer src="../js/actualizarAnio.js"></script>
     <script defer src="../js/editPokemon.js"></script>
+    <script defer src="../js/estacionesColores.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Proyecto Pokémon</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -43,6 +45,7 @@
             </div>
         </div>
     </nav>
+    </header>
     <div class="container">
         <div class="table-responsive">
             <table class="table table-striped">
@@ -64,8 +67,8 @@
                         <td>grass</td>
                         <td>physical</td>
                         <td>Kanto</td>
-                        <td><a class="btn btn-primary" href="003pkms.html">Editar</a></td>
-                        <td><button class="btn btn-danger eliminar-btn" data-id="1">Eliminar</button></td>
+                        <td><a class="btn" href="003pkms.html">Editar</a></td>
+                        <td><button class="btn eliminar-btn" data-id="1">Eliminar</button></td>
                     </tr>
                     <tr data-id="2">
                         <td>2</td>
@@ -73,8 +76,8 @@
                         <td>fire</td>
                         <td>special</td>
                         <td>Kanto</td>
-                        <td><a class="btn btn-primary" href="003pkms.html">Editar</a></td>
-                        <td><button class="btn btn-danger eliminar-btn" data-id="2">Eliminar</button></td>
+                        <td><a class="btn " href="003pkms.html">Editar</a></td>
+                        <td><button class="btn  eliminar-btn" data-id="2">Eliminar</button></td>
                     </tr>
                     <tr data-id="3">
                         <td>3</td>
@@ -82,8 +85,8 @@
                         <td>water</td>
                         <td>physical</td>
                         <td>Kanto</td>
-                        <td><a class="btn btn-primary" href="003pkms.html">Editar</a></td>
-                        <td><button class="btn btn-danger eliminar-btn" data-id="3">Eliminar</button></td>
+                        <td><a class="btn " href="003pkms.html">Editar</a></td>
+                        <td><button class="btn  eliminar-btn" data-id="3">Eliminar</button></td>
                     </tr>
                     <tr data-id="4">
                         <td>4</td>
@@ -91,8 +94,8 @@
                         <td>electric</td>
                         <td>special</td>
                         <td>Kanto</td>
-                        <td><a class="btn btn-primary" href="003pkms.html">Editar</a></td>
-                        <td><button class="btn btn-danger eliminar-btn" data-id="4">Eliminar</button></td>
+                        <td><a class="btn " href="003pkms.html">Editar</a></td>
+                        <td><button class="btn eliminar-btn" data-id="4">Eliminar</button></td>
                     </tr>
                     <tr data-id="5">
                         <td>5</td>
@@ -100,8 +103,8 @@
                         <td>normal</td>
                         <td>physical</td>
                         <td>Kanto</td>
-                        <td><a class="btn btn-primary" href="003pkms.html">Editar</a></td>
-                        <td><button class="btn btn-danger eliminar-btn" data-id="5">Eliminar</button></td>
+                        <td><a class="btn " href="003pkms.html">Editar</a></td>
+                        <td><button class="btn  eliminar-btn" data-id="5">Eliminar</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -124,8 +127,8 @@
 
                     <!-- Modal Footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" id="btnConfirmar">Confirmar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        <button type="button" class="btn " id="btnConfirmar">Confirmar</button>
+                        <button type="button" class="btn " data-bs-dismiss="modal"
                             id="btnCancelar">Cancelar</button>
                     </div>
                 </div>

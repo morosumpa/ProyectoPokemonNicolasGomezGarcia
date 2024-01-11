@@ -1,0 +1,58 @@
+body {
+    transition: background-color 0.5s ease;
+}
+
+.spring-theme {
+    background-color: #ffcccb;
+    color: #333;
+}
+
+.summer-theme {
+    background-color: #00ff00;
+    color: #333;
+}
+
+.autumn-theme {
+    background-color: #ffa500;
+    color: #333;
+}
+
+.winter-theme {
+    background-color: #87CEEB;
+    color: #333;
+}
+body {
+    transition: background-color 0.5s ease;
+}
+
+/* Estilos para el header y footer */
+#header,
+#footer {
+    transition: background-color 0.5s ease;
+    color: #333; 
+}
+
+/* Estilos para los botones */
+#header,
+#footer,.spring-btn {
+    background-color: #cf6d6d; 
+    color: #333;
+}
+
+#header,
+#footer,.summer-btn {
+    background-color: #529e52; 
+    color: #333;
+}
+
+#header,
+#footer,.autumn-btn {
+    background-color: #c37f19; 
+    color: #333;
+}
+
+#header,
+#footer,.winter-btn {
+    background-color: #4e8ec3; 
+    color: #333;
+}
