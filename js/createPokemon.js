@@ -1,5 +1,5 @@
 "use strict";
-// Función que se ejecutará al enviar el formulario en 003pkms.html
+// Función que se ejecutará al enviar el formulario en 004pkms.html
 function onSubmitForm() {
     // Obtiene los valores del formulario
     let nuevoNombre = document.getElementById('pokemonName').value;
@@ -10,7 +10,7 @@ function onSubmitForm() {
     // Verifica si los valores son válidos 
     if (nuevoNombre && nuevoTipo && nuevoSubtipo && nuevaRegion) {
         // Redirecciona a la página 002pkms.html
-        window.location.href = "001pkms.html";
+        window.location.href = "002pkms.html";
         alert("todo ha sido introducido correctamente");
     } else {
         console.error("Por favor, completa todos los campos del formulario.");
