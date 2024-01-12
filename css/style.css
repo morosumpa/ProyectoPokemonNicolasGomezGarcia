@@ -1,7 +1,11 @@
 body {
     transition: background-color 0.5s ease;
+    justify-content: center;
 }
-
+img {
+    width: 100%;
+    height: auto;
+}
 .spring-theme {
     background-color: #ffcccb;
     color: #333;
