@@ -21,14 +21,14 @@ function eliminarPokemon(id) {
     let btnCancelar = document.getElementById("btnCancelar");
 
     //boton de confirmar
-    btnConfirmar.onclick = function() {
+    btnConfirmar.onclick = function () {
         // Oculta el modal
         modal.style.display = "none";
         console.log("El Pokémon con ID " + id + " ha sido eliminado correctamente.");
     };
 
     //boton de cancelar
-    btnCancelar.onclick = function() {
+    btnCancelar.onclick = function () {
         // Oculta el modal
         modal.style.display = "none";
         console.log("Se canceló el proceso de eliminación del Pokémon  con ID " + id);

@@ -1,5 +1,5 @@
 "use strict";
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById('loginForm').addEventListener('submit', function (event) {
     // Obtiene los valores almacenados en el almacenamiento local
     let storedUser = localStorage.getItem('signedInUser');
     if (!storedUser) {

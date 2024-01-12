@@ -38,10 +38,10 @@ function onTypeChange() {
     }
 }
 
-function onSubTypeChange() { 
+function onSubTypeChange() {
     let subtipoSelect = document.getElementById('pokemonSubtype').value;
     let tipoSeleccionado = document.getElementById('pokemonType');
-   
+
 
     // Habilita todas las opciones
     for (let i = 0; i < tipoSeleccionado.options.length; i++) {
