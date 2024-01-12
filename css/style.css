@@ -34,25 +34,40 @@ body {
 
 /* Estilos para los botones */
 #header,
-#footer,.spring-btn {
+#footer{
     background-color: #cf6d6d; 
     color: #333;
 }
+.spring-btn {
+    background-color: #8f4141; 
+    color: #ebe9e9;
+}
 
 #header,
-#footer,.summer-btn {
+#footer {
     background-color: #529e52; 
     color: #333;
 }
-
-#header,
-#footer,.autumn-btn {
-    background-color: #c37f19; 
-    color: #333;
+.summer-btn {
+    background-color: #247424; 
+    color: #ebe9e9;
 }
 
 #header,
-#footer,.winter-btn {
+#footer {
+    background-color: #c37f19; 
+    color: #333;
+}
+.autumn-btn {
+    background-color: #a76c15; 
+    color: #ebe9e9;
+}
+#header,
+#footer{
     background-color: #4e8ec3; 
     color: #333;
+}
+.winter-btn {
+    background-color: #16609c; 
+    color: #ebe9e9;
 }
