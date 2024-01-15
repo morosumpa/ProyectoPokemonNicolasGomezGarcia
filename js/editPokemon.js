@@ -10,7 +10,7 @@ function onSubmitForm() {
     // Verifica si los valores son válidos 
     if (nuevoNombre && nuevoTipo && nuevoSubtipo && nuevaRegion) {
         // Redirecciona a la página 002pkms.html
-        window.location.href = "001pkms.html";
+        window.location.href = "002pkms.html";
         alert("todo ha sido introducido correctamente");
     } else {
         console.error("Por favor, completa todos los campos del formulario.");
