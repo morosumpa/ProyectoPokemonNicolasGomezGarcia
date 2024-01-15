@@ -17,6 +17,7 @@
     <script defer src="../js/deletePokemon.js"></script>
     <script defer src="../js/actualizarAnio.js"></script>
     <script defer src="../js/editPokemon.js"></script>
+    <script defer src="../js/ordenTabla.js"></script>
     <script defer src="../js/estacionesColores.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -53,6 +54,7 @@
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Nombre</th>
+                        <th scope="col">Img</th>
                         <th scope="col">Tipo</th>
                         <th scope="col">Subtipo</th>
                         <th scope="col">Región</th>
@@ -64,50 +66,58 @@
                     <tr data-id="1">
                         <td>1</td>
                         <td>Bulbasaur</td>
+                        <td><a href="https://pokemondb.net/pokedex/bulbasaur"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif" alt="Bulbasaur"></a></td>
                         <td>grass</td>
                         <td>physical</td>
                         <td>Kanto</td>
                         <td><a class="btn" href="003pkms.html">Editar</a></td>
-                        <td><button class="btn eliminar-btn" data-id="1">Eliminar</button></td>
+                        <td><button class="btn btn-danger eliminar-btn" data-id="1">Eliminar</button></td>
                     </tr>
                     <tr data-id="2">
                         <td>2</td>
                         <td>Charmander</td>
+                        <td><a href="https://pokemondb.net/pokedex/charmander"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/charmander.gif" alt="Charmander"></a></td>
                         <td>fire</td>
                         <td>special</td>
                         <td>Kanto</td>
                         <td><a class="btn " href="003pkms.html">Editar</a></td>
-                        <td><button class="btn  eliminar-btn" data-id="2">Eliminar</button></td>
+                        <td><button class="btn btn-danger eliminar-btn" data-id="2">Eliminar</button></td>
                     </tr>
                     <tr data-id="3">
                         <td>3</td>
                         <td>Squirtle</td>
+                        <td><a href="https://pokemondb.net/pokedex/squirtle"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/squirtle.gif" alt="Squirtle"></a></td>
                         <td>water</td>
                         <td>physical</td>
                         <td>Kanto</td>
                         <td><a class="btn " href="003pkms.html">Editar</a></td>
-                        <td><button class="btn  eliminar-btn" data-id="3">Eliminar</button></td>
+                        <td><button class="btn btn-danger eliminar-btn" data-id="3">Eliminar</button></td>
                     </tr>
                     <tr data-id="4">
                         <td>4</td>
                         <td>Pikachu</td>
+                        <td><a href="https://pokemondb.net/pokedex/pikachu"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif" alt="Pikachu"></a></td>
                         <td>electric</td>
                         <td>special</td>
                         <td>Kanto</td>
                         <td><a class="btn " href="003pkms.html">Editar</a></td>
-                        <td><button class="btn eliminar-btn" data-id="4">Eliminar</button></td>
+                        <td><button class="btn btn-danger eliminar-btn" data-id="4">Eliminar</button></td>
                     </tr>
                     <tr data-id="5">
                         <td>5</td>
                         <td>Eevee</td>
+                        <td><a href="https://pokemondb.net/pokedex/eevee"><img src="https://img.pokemondb.net/sprites/black-white/anim/normal/eevee.gif" alt="Eevee"></a></td>
                         <td>normal</td>
                         <td>physical</td>
                         <td>Kanto</td>
                         <td><a class="btn " href="003pkms.html">Editar</a></td>
-                        <td><button class="btn  eliminar-btn" data-id="5">Eliminar</button></td>
+                        <td><button class="btn btn-danger eliminar-btn" data-id="5">Eliminar</button></td>
                     </tr>
                 </tbody>
             </table>
+            <div class="text-center mt-3">
+                <button class="btn btn-primary" onclick="cambiarDireccion()">Ascendente/Descendente</button>
+            </div>
         </div>
 
         <div class="modal" id="confirmModal">
